@@ -1,0 +1,41 @@
+name: Odysseus
+
+options:
+  xcodeVersion: "15.4"
+  bundleIdPrefix: com.s9yvmzf2s7afk
+  deploymentTarget:
+    iOS: "16.0"
+
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGNING_ALLOWED: NO
+    CODE_SIGNING_REQUIRED: NO
+    CODE_SIGN_IDENTITY: ""
+    DEVELOPMENT_TEAM: ""
+
+targets:
+  Odysseus:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleDisplayName: Odysseus
+        CFBundleName: Odysseus
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "2"
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.s9yvmzf2s7afk.odysseus
+        PRODUCT_NAME: Odysseus
+        TARGETED_DEVICE_FAMILY: 1
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
